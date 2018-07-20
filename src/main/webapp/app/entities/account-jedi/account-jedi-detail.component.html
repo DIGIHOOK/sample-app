@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="accountJEDI">
+            <h2><span jhiTranslate="sampleAppApp.accountJEDI.detail.title">Account JEDI</span> {{accountJEDI.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="sampleAppApp.accountJEDI.accountNum">Account Num</span></dt>
+                <dd>
+                    <span>{{accountJEDI.accountNum}}</span>
+                </dd>
+                <dt><span jhiTranslate="sampleAppApp.accountJEDI.accountName">Account Name</span></dt>
+                <dd>
+                    <span>{{accountJEDI.accountName}}</span>
+                </dd>
+                <dt><span jhiTranslate="sampleAppApp.accountJEDI.accountBalance">Account Balance</span></dt>
+                <dd>
+                    <span>{{accountJEDI.accountBalance}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/account-jedi', accountJEDI.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
