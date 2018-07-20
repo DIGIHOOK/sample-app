@@ -1,0 +1,25 @@
+
+{
+    "sampleAppApp": {
+        "accountJEDI" : {
+            "home": {
+                "title": "Account JEDIS",
+                "createLabel": "Create a new Account JEDI",
+                "createOrEditLabel": "Create or edit a Account JEDI",
+                "search": "Search for Account JEDI"
+            },
+            "created": "A new Account JEDI is created with identifier {{ param }}",
+            "updated": "A Account JEDI is updated with identifier {{ param }}",
+            "deleted": "A Account JEDI is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Account JEDI {{ id }}?"
+            },
+            "detail": {
+                "title": "Account JEDI"
+            },
+            "accountNum": "Account Num",
+            "accountName": "Account Name",
+            "accountBalance": "Account Balance"
+        }
+    }
+}
