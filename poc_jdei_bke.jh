@@ -1,0 +1,16 @@
+
+
+entity AccountJEDI {
+	accountNum Long,
+    accountName String,
+    accountBalance Long
+}
+
+paginate AccountJEDI with infinite-scroll
+paginate AccountJEDI with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
